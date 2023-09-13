@@ -53,7 +53,6 @@ class HomeActivity extends StatelessWidget{
           IconButton(onPressed: (){MySnackBar("Settings", context);}, icon: Icon(Icons.settings)),
         ],
       ),
-
       floatingActionButton: FloatingActionButton(
         elevation: 6,
         child: Icon(Icons.add),
@@ -63,6 +62,16 @@ class HomeActivity extends StatelessWidget{
 
         },
       ),
+    bottomNavigationBar: BottomNavigationBar(
+      currentIndex: 2,// will show the active index
+      items: [
+
+        BottomNavigationBarItem(icon: Icon(Icons.home), label: "home"),
+        BottomNavigationBarItem(icon: Icon(Icons.settings), label: "Setting"),
+        BottomNavigationBarItem(icon: Icon(Icons.search), label: "Searct"),
+      ],
+    ),
+
     );
   }
 }
