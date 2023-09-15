@@ -53,6 +53,9 @@ class HomeActivity extends StatelessWidget{
           IconButton(onPressed: (){MySnackBar("Settings", context);}, icon: Icon(Icons.settings)),
         ],
       ),
+
+      // FLOATING ACTION BUTTON
+      //================================================
       floatingActionButton: FloatingActionButton(
         elevation: 6,
         child: Icon(Icons.add),
